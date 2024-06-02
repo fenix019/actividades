@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+header .logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+header nav ul.menu {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul.menu li {
+    display: inline;
+}
+
+header nav ul.menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+header .donar-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Set the max width */
+    aspect-ratio: 16 / 9; /* Set the aspect ratio to 16:9 */
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.slider video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire container without distortion */
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+.slider .slide.active {
+    display: block;
+}
