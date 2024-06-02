@@ -18,7 +18,7 @@ function validateEmail() {
 
 
 const images = [
-   'img/imagen1.jpg',
+   '../img/imagen1.jpg',
    'img/imagen2.jpg',
    'img/imagen3.jpg',
    'img/imagen4.jpg',
